@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Inventory Management System</h1>
+  <div class="container">
+    <div class="inventory-list">
+      <h2>Inventory List</h2>
+      <ul id="item-list"></ul>
+    </div>
+    <div class="add-item">
+      <h2>Add Item</h2>
+      <input type="text" id="itemName" placeholder="Item Name">
+      <input type="number" id="itemQuantity" placeholder="Quantity">
+      <input type="number" id="itemCost" placeholder="Cost (INR)">
+      <button onclick="addItem()">Add</button>
+    </div>
+  </div>
+  <div class="total-purchased">
+    <h2>Total Purchased Items</h2>
+    <p>Total Items: <span id="totalItems">0</span></p>
+    <p>Total Cost: <span id="totalCost">0.00</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
